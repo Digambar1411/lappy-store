@@ -6,7 +6,8 @@ import {
       Signup, 
       Cart, 
       Wishlist, 
-      Products } from  "./frontend/pages";
+      Products, 
+      PageNotFound } from  "./frontend/pages";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path= "/cart" element = { <Cart/> }/>
         <Route path= "/wishlist" element = { <Wishlist/> }/>
         <Route path= "/products" element = { <Products/> }/>
+        <Route path= "*" element = { <PageNotFound/> }/>
       </Routes>  
     </div>
   );
