@@ -1,0 +1,46 @@
+:root{
+    --light-color:rgb(230, 228, 228);
+}
+.ecom-footer{
+    background-color: rgb(8, 8, 8);
+    color: white;
+    padding: 2rem 0rem;
+    height: 10rem;
+    justify-content: space-around;
+    margin-top: 1rem;
+}
+
+.footer-links{
+    list-style: none; 
+}
+
+.footer-link, .social-icon, .brand{
+    color: white;
+}
+.brandName{
+    font-size:2em;
+    color: var(--color-primary);
+}
+.footer-link:hover, .social-icon:hover{
+    cursor: pointer;
+    color:var(--color-primary);
+}
+
+.footer-section{
+    align-items: flex-start;
+}
+
+.footer-heading{
+    font-size:x-large;
+    color: var(--light-color);
+}
+
+ul{
+    padding-inline-start: 0px;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+
+.gap-1rem{
+    gap: 1rem;
+}
