@@ -1,8 +1,9 @@
 :root{
     --light-color:rgb(230, 228, 228);
+    --ecom-footer-background:rgb(8, 8, 8);
 }
 .ecom-footer{
-    background-color: rgb(8, 8, 8);
+    background-color: var(--ecom-footer-background);
     color: white;
     padding: 2rem 0rem;
     height: 10rem;
