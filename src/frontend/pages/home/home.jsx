@@ -3,7 +3,7 @@ import "./home.css";
 import { Navbar } from  "../../components/navbar/Navbar";
 import { Footer } from "../../components/footer/Footer";
 import { useNavigate } from "react-router-dom";
-const laptopImage = require('../../assets/laptop.png');
+export const laptopImage = require('../../assets/laptop.png');
 const dellLogo = require('../../assets/dell-144.png');
 const hpLogo = require('../../assets/hp-144.png');
 const samsungLogo = require('../../assets/samsung-144.png');
@@ -36,7 +36,7 @@ export function Home() {
                   </div>
           
                   <div className="body-content div-padding">
-                    <h3 className="card-title" onClick={()=> Navigate('/products')}>Thin & Light Laptop</h3>
+                    <h3 className="deal-card-title" onClick={()=> Navigate('/products')}>Thin & Light Laptop</h3>
                     <h4 className="card-sub-title">Reimagine the Way Your Kids Learn No Cost EMI & more.</h4>
                   </div>
                 </div>             
@@ -49,7 +49,7 @@ export function Home() {
                   </div>
           
                   <div className="body-content div-padding">
-                    <h3 className="card-title" onClick={()=> Navigate('/products')}>Budget Laptop </h3>
+                    <h3 className="deal-card-title" onClick={()=> Navigate('/products')}>Budget Laptop </h3>
                     <h4 className="card-sub-title">Learning Made Engaging and Fun. Exclusive Deals with Great Offers.</h4>
                   </div>
                 </div>             
@@ -62,7 +62,7 @@ export function Home() {
                   </div>
           
                   <div className="body-content div-padding">
-                    <h3 className="card-title" onClick={()=> Navigate('/products')}>Gaming Laptop</h3>
+                    <h3 className="deal-card-title" onClick={()=> Navigate('/products')}>Gaming Laptop</h3>
                     <h4 className="card-sub-title">Powerful gaming setups for brilliant wins.</h4>
                   </div>
                 </div>

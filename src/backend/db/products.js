@@ -14,6 +14,8 @@ export const products = [
     processor:"core i5",
     ram:"8 GB",
     rating:"5",
+    discount:"1000",
+    offer:"35",
     details:
       `512 GB SSD/Windows 10 Home15IML05
       Thin and Light Laptop  (
@@ -28,6 +30,8 @@ export const products = [
     processor:"core i3",
     ram:"8 GB",
     rating:"4",
+    discount:"2000",
+    offer:"38",
     details:
       `512 GB SSD/Windows 10 Home15IML05
       Thin and Light Laptop  (
@@ -42,6 +46,8 @@ export const products = [
     processor:"core i3",
     ram:"4 GB",
     rating:"4",
+    discount:"1800",
+    offer:"45",
     details:
       `256 GB SSD/Windows 10 Home15IML05
       Thin and Light Laptop  (
@@ -56,6 +62,8 @@ export const products = [
     processor:"core i5",
     ram:"8 GB",
     rating:"3",
+    discount:"5000",
+    offer:"15",
     details:
       `512 GB SSD/Windows 10 Home15IML05
       Thin and Light Laptop  (
@@ -70,6 +78,8 @@ export const products = [
     processor:"core i3",
     ram:"4 GB",
     rating:"3",
+    discount:"900",
+    offer:"13",
     details:
       `256 GB SSD/Windows 10 Home15IML05
       Thin and Light Laptop  (
@@ -84,6 +94,8 @@ export const products = [
     processor:"core i5",
     ram:"16 GB",
     rating:"5",
+    discount:"4500",
+    offer:"05",
     details:
       `512 GB SSD/Windows 10 Home15IML05
       Thin and Light Laptop  (
@@ -98,6 +110,8 @@ export const products = [
     processor:"core i5",
     ram:"8 GB",
     rating:"3",
+    discount:"1000",
+    offer:"35",
     details:
       `512 GB SSD/Windows 10 Home15IML05
       Thin and Light Laptop, 4GB Graphics (
@@ -112,6 +126,8 @@ export const products = [
     processor:"core i5",
     ram:"8 GB",
     rating:"4",
+     discount:"1000",
+    offer:"35",
     details:
       `512 GB SSD/Windows 10 Home15IML05
       Thin and Light Laptop  (
@@ -126,6 +142,8 @@ export const products = [
     processor:"core i3",
     ram:"8 GB",
     rating:"4",
+    discount:"1000",
+    offer:"35",
     details:
       `256 GB SSD/Windows 10 Home15IML05
       Thin and Light Laptop  (
@@ -140,6 +158,8 @@ export const products = [
     processor:"core i3",
     ram:"8 GB",
     rating:"5",
+    discount:"1000",
+    offer:"35",
     details:
       `1 TB HDD/Windows 10 Home15IML05
       Thin and Light Laptop  (
@@ -154,6 +174,8 @@ export const products = [
     processor:"core i3",
     ram:"8 GB",
     rating:"4",
+    discount:"1000",
+    offer:"35",
     details:
       `1 TB SSD/Windows 10 Home15IML05
       Thin and Light Laptop  (
@@ -168,6 +190,8 @@ export const products = [
     processor:"core i3",
     ram:"4 GB",
     rating:"3",
+    discount:"1000",
+    offer:"35",
     details:
       `1 TB SSD/Windows 10 Home15IML05
       Thin and Light Laptop  (
@@ -182,6 +206,8 @@ export const products = [
     processor:"core i3",
     ram:"4 GB",
     rating:"4",
+    discount:"1000",
+    offer:"35",
     details:
       `512 GB SSD/Windows 10 Home15IML05
       Thin and Light Laptop  (
@@ -196,6 +222,8 @@ export const products = [
     processor:"core i5",
     ram:"8 GB",
     rating:"4",
+     discount:"6000",
+    offer:"15",
     details:
       `512 GB SSD/Windows 10 Home15IML05
       Thin and Light Laptop  (
@@ -210,6 +238,8 @@ export const products = [
     processor:"core i3",
     ram:"8 GB",
     rating:"3",
+    discount:"1000",
+    offer:"35",
     details:
       `256 GB SSD/Windows 10 Home15IML05
       Thin and Light Laptop  (
@@ -224,6 +254,8 @@ export const products = [
       processor:"core i3",
       ram:"8 GB",
       rating:"4",
+       discount:"1100",
+    offer:"11",
       details:
         `1 TB SSD/Windows 10 Home15IML05
         Thin and Light Laptop  (
@@ -238,6 +270,8 @@ export const products = [
         processor:"core i5",
         ram:"8 GB",
         rating:"5",
+        discount:"1000",
+        offer:"35",
         details:
           `512 GB SSD/Windows 10 Home15IML05
           Thin and Light Laptop  (
