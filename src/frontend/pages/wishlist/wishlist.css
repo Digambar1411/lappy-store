@@ -1,0 +1,9 @@
+
+.whishlist-body{
+    flex-wrap: wrap;
+}
+
+.wish-title{
+    padding:3rem 0;
+    font-size:1.5rem;
+}
