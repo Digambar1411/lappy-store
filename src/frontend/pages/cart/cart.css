@@ -1,0 +1,41 @@
+:root{
+    --light-sky-blue:rgb(192, 210, 228);
+    --price-card-background:#fff;
+}
+
+.width-100{
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+.mycart-title{
+    margin-top: 3rem;
+    font-size: 1.5rem;
+}
+
+.price-card{
+    width:18rem;
+    background-color:var(--price-card-background);
+    padding:1.5rem 1rem;
+    gap:1rem;
+    height:fit-content;
+    position: sticky;
+}
+.price-card > .title{
+    font-size: 1.25rem; 
+}
+
+.space-btw{
+    justify-content: space-between;
+}
+
+.gap-1rem{
+    gap:1rem
+}
+
+.mycart{
+    width: 90%;
+    margin: 3rem auto;
+    gap: 5rem;
+ 
+}
