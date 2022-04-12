@@ -75,7 +75,7 @@ body{
 
 .login-btn{
     background-color:var(--color-primary);
-    color: white;
+    color: #FFF;
     border: none;
     margin-top: 8px;
     padding: 0.5rem 1rem;
@@ -101,7 +101,7 @@ body{
 
 .link-forgot-pass{
     text-decoration: none;
-    color: #5959ec;
+    color:var(--color-primary);
     font-size:small
 }
 
@@ -112,7 +112,7 @@ body{
 
 .link-white{
     text-decoration: none;
-    color: white;
+    color:#FFF;
 }
 
 .margin-top-1rem{
