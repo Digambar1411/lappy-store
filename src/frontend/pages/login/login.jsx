@@ -9,8 +9,8 @@ export function Login(){
         <>
             <Navbar />
             <div className="login-card flex-col">
-                <h1 className="text-center margin-zero">Login</h1>
-                <form className="flex-col">
+                <h1 className="text-center margin-below-1rem">Login</h1>
+                <form className="flex-col-login">
                     <div className="flex-col">
                         <label className="larger-font" for="email">Email address</label>
                         <input className="input padding-top-12px" type="email" placeholder="abc@gmail.com" required/>
@@ -21,12 +21,12 @@ export function Login(){
                         <input className="input  padding-top-12px" placeholder="enter your password" id='password' type="password" required/>
                     </div>
                     <div className="flex-col-login margin-top-8px">
-                        <div className="flex-row-login">
-                            <label className="flex-row-login">
+                        <div className="justify-content-space-btwn">
+                            <label className="flex-row">
                                 <input className="input-checkbox" type="checkbox" name="light"  value=""/>
                                 <span>Remember me</span>
                             </label>
-                            <Link  className="link-forgot-pass" to="#">Forgot password</Link>
+                            <Link  className="link-forgot-pass" to="#">Forgot password?</Link>
                         </div>
 
                     </div>
@@ -37,11 +37,10 @@ export function Login(){
                 </form>
 
             
-                <div className=" flex-center-login text-center margin-top-1rem">
-                    <Link className="link-black text-center" to="/signup">Create New Account</Link>
-                    <span className="material-icons-outlined bold">
-                        arrow_forward
-                        </span>
+                <div className="text-center center margin-top-1rem">
+                    <Link className="link-black text-center center" to="/signup">Create New Account
+                    <span className="material-icons-outlined bold center">arrow_forward</span>
+                    </Link>
                 </div>
             </div>
         </>

@@ -8,9 +8,9 @@ export function Signup(){
        <>
        <Navbar />
         <div className="login-card flex-col">
-            <h1 className="text-center margin-zero">Sign up</h1>
-            <form className="flex-col">
-                <div className="flex-col-login">
+            <h1 className="text-center margin-below-1rem">Sign up</h1>
+            <form className="flex-col-login">
+                <div className="flex-col">
                     <label className="larger-font" for="email">Email address</label>
                     <input className="input padding-top-12px" type="email" placeholder="abc@gmail.com" required/>
                 </div>
@@ -20,14 +20,14 @@ export function Signup(){
                     <input className="input padding-top-12px" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;" id='password' type="password" required/>
                 </div>
 
-                <div className="flex-col-login">
+                <div className="flex-col">
                     <label className="larger-font" for="password">Re-type Password</label>
                     <input className="input padding-top-12px" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;" id='password' type="password" required/>
                 </div>
 
                 <div className="flex-col-login margin-top-8px">
                     <div className="flex-left">
-                        <label className="flex-row-login">
+                        <label className="flex-row">
                             <input className="input-checkbox" type="checkbox" name="light"  value="" required/>
                             <span required>Accept terms & condition</span>
                         </label>
@@ -44,8 +44,9 @@ export function Signup(){
             <div className="flex-row-login text-center margin-top-1rem">
                 <span>Already have account ?</span>
                 <div className="flex-center">
-                    <Link className=" link-black text-center" to="/login">Login</Link>
+                    <Link className=" link-black text-center" to="/login">Login
                     <span className="material-icons-outlined bold">login</span>
+                    </Link>
                 </div>
                 
             </div>
