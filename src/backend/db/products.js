@@ -13,7 +13,9 @@ export const products = [
     price: "50000",
     processor:"core i5",
     ram:"8 GB",
-    rating:"5",
+    rating:"2",
+    discount:"1000",
+    offer:"35",
     details:
       `512 GB SSD/Windows 10 Home15IML05
       Thin and Light Laptop  (
@@ -28,6 +30,8 @@ export const products = [
     processor:"core i3",
     ram:"8 GB",
     rating:"4",
+    discount:"2000",
+    offer:"38",
     details:
       `512 GB SSD/Windows 10 Home15IML05
       Thin and Light Laptop  (
@@ -38,10 +42,12 @@ export const products = [
     _id: uuid(),
     name:"Lenove ThinkPad E15",
     brand:"lenovo",
-    price: "44,950",
+    price: "44950",
     processor:"core i3",
     ram:"4 GB",
-    rating:"4",
+    rating:"1",
+    discount:"1800",
+    offer:"45",
     details:
       `256 GB SSD/Windows 10 Home15IML05
       Thin and Light Laptop  (
@@ -56,6 +62,8 @@ export const products = [
     processor:"core i5",
     ram:"8 GB",
     rating:"3",
+    discount:"5000",
+    offer:"15",
     details:
       `512 GB SSD/Windows 10 Home15IML05
       Thin and Light Laptop  (
@@ -70,6 +78,8 @@ export const products = [
     processor:"core i3",
     ram:"4 GB",
     rating:"3",
+    discount:"900",
+    offer:"13",
     details:
       `256 GB SSD/Windows 10 Home15IML05
       Thin and Light Laptop  (
@@ -83,7 +93,9 @@ export const products = [
     price: "79990",
     processor:"core i5",
     ram:"16 GB",
-    rating:"5",
+    rating:"3",
+    discount:"4500",
+    offer:"05",
     details:
       `512 GB SSD/Windows 10 Home15IML05
       Thin and Light Laptop  (
@@ -94,10 +106,12 @@ export const products = [
     _id: uuid(),
     name:"Dell inpiron 7501",
     brand:"dell",
-    price: "79990",
+    price: "89990",
     processor:"core i5",
     ram:"8 GB",
     rating:"3",
+    discount:"1000",
+    offer:"35",
     details:
       `512 GB SSD/Windows 10 Home15IML05
       Thin and Light Laptop, 4GB Graphics (
@@ -108,10 +122,12 @@ export const products = [
     _id: uuid(),
     name:"Dell XPS",
     brand:"dell",
-    price: "1,11,890",
+    price: "111890",
     processor:"core i5",
     ram:"8 GB",
     rating:"4",
+     discount:"1000",
+    offer:"35",
     details:
       `512 GB SSD/Windows 10 Home15IML05
       Thin and Light Laptop  (
@@ -126,6 +142,8 @@ export const products = [
     processor:"core i3",
     ram:"8 GB",
     rating:"4",
+    discount:"1000",
+    offer:"35",
     details:
       `256 GB SSD/Windows 10 Home15IML05
       Thin and Light Laptop  (
@@ -140,6 +158,8 @@ export const products = [
     processor:"core i3",
     ram:"8 GB",
     rating:"5",
+    discount:"1000",
+    offer:"35",
     details:
       `1 TB HDD/Windows 10 Home15IML05
       Thin and Light Laptop  (
@@ -149,11 +169,13 @@ export const products = [
   {
     _id: uuid(),
     name:"Asus Vivobook 14",
-    brand:"Asus",
+    brand:"asus",
     price: "31980",
     processor:"core i3",
     ram:"8 GB",
     rating:"4",
+    discount:"1000",
+    offer:"35",
     details:
       `1 TB SSD/Windows 10 Home15IML05
       Thin and Light Laptop  (
@@ -168,6 +190,8 @@ export const products = [
     processor:"core i3",
     ram:"4 GB",
     rating:"3",
+    discount:"1000",
+    offer:"35",
     details:
       `1 TB SSD/Windows 10 Home15IML05
       Thin and Light Laptop  (
@@ -177,11 +201,13 @@ export const products = [
   {
     _id: uuid(),
     name:"Asus Vivobook Ultra",
-    brand:"Asus",
+    brand:"asus",
     price: "40990",
     processor:"core i3",
     ram:"4 GB",
-    rating:"4",
+    rating:"3",
+    discount:"1000",
+    offer:"35",
     details:
       `512 GB SSD/Windows 10 Home15IML05
       Thin and Light Laptop  (
@@ -195,7 +221,9 @@ export const products = [
     price: "64990",
     processor:"core i5",
     ram:"8 GB",
-    rating:"4",
+    rating:"2",
+     discount:"6000",
+    offer:"15",
     details:
       `512 GB SSD/Windows 10 Home15IML05
       Thin and Light Laptop  (
@@ -210,6 +238,8 @@ export const products = [
     processor:"core i3",
     ram:"8 GB",
     rating:"3",
+    discount:"1000",
+    offer:"35",
     details:
       `256 GB SSD/Windows 10 Home15IML05
       Thin and Light Laptop  (
@@ -223,7 +253,9 @@ export const products = [
       price: "40990",
       processor:"core i3",
       ram:"8 GB",
-      rating:"4",
+      rating:"3",
+       discount:"1100",
+    offer:"11",
       details:
         `1 TB SSD/Windows 10 Home15IML05
         Thin and Light Laptop  (
@@ -232,12 +264,14 @@ export const products = [
     },
     {
       _id: uuid(),
-        name:"HP Corer i5",
+        name:"HP Corer i7",
         brand:"hp",
-        price: "42997",
-        processor:"core i5",
-        ram:"8 GB",
+        price: "121997",
+        processor:"core i7",
+        ram:"16 GB",
         rating:"5",
+        discount:"1000",
+        offer:"35",
         details:
           `512 GB SSD/Windows 10 Home15IML05
           Thin and Light Laptop  (

@@ -14,16 +14,16 @@ export function Footer() {
 					Made with ❤️ by Digambar
 				</div>
 				<div className="flex gap-1rem">
-					<a href="https://www.linkedin.com/in/digambar-deshawal-9b279b147/" target="_blank">
+					<a href="https://www.linkedin.com/in/digambar-deshawal-9b279b147/"  target="_blank" rel="noopener noreferrer">
 						<img src="https://img.icons8.com/color/48/000000/linkedin.png"alt="linkedin" />
 					</a>
 
-					<a href="https://twitter.com/deshawald14" target="_blank">
-						<img src="https://img.icons8.com/color/48/000000/twitter-squared.png" alt="twitter"/>
+					<a href="https://twitter.com/deshawald14" target="_blank"  rel="noopener noreferrer">
+						<img src="https://img.icons8.com/color/48/000000/twitter-squared.png" alt="twitter"  />
 					</a>
 
-					<a href="https://github.com/Digambar1411" target="_blank">
-						<img src="https://img.icons8.com/color-glass/48/000000/github.png" alt="github"/>
+					<a href="https://github.com/Digambar1411" target="_blank"  rel="noopener noreferrer">
+						<img src="https://img.icons8.com/color-glass/48/000000/github.png" alt="github" />
 					</a>	
 				</div>
 			</div>

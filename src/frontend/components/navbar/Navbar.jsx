@@ -6,7 +6,7 @@ export function Navbar() {
     const navigate = useNavigate();
     return (
       <nav className="nav flex center">
-        <div className="sitename"><h2>Lappy Store</h2></div>
+        <div className="sitename" onClick= {()=>navigate("/")}><h2>Lappy Store</h2></div>
         <div className="wrapper">
           <form action="">
             <input className="search-input" type="text" name="" id="" placeholder="What are you looking for?" />

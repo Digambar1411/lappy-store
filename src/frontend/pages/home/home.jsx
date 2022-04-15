@@ -3,7 +3,7 @@ import "./home.css";
 import { Navbar } from  "../../components/navbar/Navbar";
 import { Footer } from "../../components/footer/Footer";
 import { useNavigate } from "react-router-dom";
-const laptopImage = require('../../assets/laptop.png');
+export const laptopImage = require('../../assets/laptop.png');
 const dellLogo = require('../../assets/dell-144.png');
 const hpLogo = require('../../assets/hp-144.png');
 const samsungLogo = require('../../assets/samsung-144.png');
@@ -20,7 +20,7 @@ export function Home() {
             <p className="site-info">INDIA'S LARGEST LAPTOP STORE</p>
             <p className="deal">Get best laptops deals with exciting offers</p>
             <div>
-              <button className="solid primary-solid" onClick={()=> Navigate('/products')} >Explore More</button>
+              <button className="main-solid-btn primary-solid" onClick={()=> Navigate('/products')} >Explore More</button>
             </div>
           </div>
         </div>
@@ -29,44 +29,45 @@ export function Home() {
           <div className="deal-container flex-col ">
             <p className="deal-heading flex center">BEST DEALS</p>
             <div className="brand-cards flex ">
-              <div className="card">
+              <div className="deal-card">
                 <div className="body">
                   <div className="img-div">
                     <img className="deal-card-img-size" src={ laptopImage }alt="samsung"/>
                   </div>
           
                   <div className="body-content div-padding">
-                    <h3 className="card-title" onClick={()=> Navigate('/products')}>Thin & Light Laptop</h3>
+                    <h3 className="deal-card-title" onClick={()=> Navigate('/products')}>Thin & Light Laptop</h3>
                     <h4 className="card-sub-title">Reimagine the Way Your Kids Learn No Cost EMI & more.</h4>
                   </div>
                 </div>             
               </div>
 
-              <div className="card">
+              <div className="deal-card">
                 <div className="body">
                   <div className="img-div">
                     <img className="deal-card-img-size" src={ laptopImage }alt="laptop"/>
                   </div>
           
                   <div className="body-content div-padding">
-                    <h3 className="card-title" onClick={()=> Navigate('/products')}>Budget Laptop </h3>
+                    <h3 className="deal-card-title" onClick={()=> Navigate('/products')}>Budget Laptop </h3>
                     <h4 className="card-sub-title">Learning Made Engaging and Fun. Exclusive Deals with Great Offers.</h4>
                   </div>
                 </div>             
               </div>
 
-              <div className="card">
+              <div className="deal-card">
                 <div className="body">
                   <div className="img-div">
                     <img className="deal-card-img-size" src={ laptopImage }alt="laptop"/>
                   </div>
           
                   <div className="body-content div-padding">
-                    <h3 className="card-title" onClick={()=> Navigate('/products')}>Gaming Laptop</h3>
+                    <h3 className="deal-card-title" onClick={()=> Navigate('/products')}>Gaming Laptop</h3>
                     <h4 className="card-sub-title">Powerful gaming setups for brilliant wins.</h4>
                   </div>
                 </div>
               </div>
+
                     
             </div>
           </div>
