@@ -19,7 +19,6 @@ const Sidebar =()=>{
 
     const ratingsArray = [4, 3, 2, 1];
     
-
     return(
 
     <div className="aside">
