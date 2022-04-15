@@ -24,16 +24,16 @@ const Sidebar =()=>{
     <div className="aside">
         <div className="flex flex-space-btwn center">
             <p className="filter-heading">FILTERS</p>
-            <Link className="filterClear text-underline" to="/">CLEAR ALL</Link>
+            <Link className="filterClear text-underline" to="/">CLEAR</Link>
         </div>
         <hr className="divider flex"></hr>
 
         <div className="flex-col">
            <div className="flex price-range-div">
                 <label htmlFor="myRange" className="filter-title">Price Range</label>
-                <p className="priceRange">₹{priceRange}</p>
+                <p className="priceRange">₹{priceRange || 150000}</p>
            </div>
-            <input type="range" min="1" max="200000"  className="slider" value={priceRange || 200000}
+            <input type="range" min="1" max="150000"  className="slider" value={priceRange || 150000}
             onChange={(e)=>
                 dispatch({
                     type:"FILTER_BY_PRICE_RANGE", 
