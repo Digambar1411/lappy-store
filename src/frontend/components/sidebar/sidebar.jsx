@@ -23,9 +23,9 @@ const Sidebar =()=>{
     return(
 
     <div className="aside">
-        <div className="flex flex-space-btwn">
+        <div className="flex flex-space-btwn center">
             <p className="filter-heading">FILTERS</p>
-            <Link className="filterClear" to="/">CLEAR ALL</Link>
+            <Link className="filterClear text-underline" to="/">CLEAR ALL</Link>
         </div>
         <hr className="divider flex"></hr>
 
