@@ -12,12 +12,13 @@
     padding:1rem 2rem;  
 }
 .card-Image{
-    width: 284px;
-    height: 200px;
+    width: 17.75rem;
+    height: 12.5rem;
 }
 
 .main-bar-heading{
     padding-bottom: 1rem;
+    font-size: 1.5rem;
 }
 
 .aside{
@@ -33,12 +34,13 @@
 
 .filter-heading{
     font-weight:bold;
-    font-size: 1rem;
+    font-size: 1.75rem;
 }
 
 .filter-title{
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     padding-top: 1rem;
+    font-weight: 700;
 }
 
 .slider{
@@ -47,6 +49,7 @@
 }
 
 .inputDiv{
+    font-size: larger;
     display: flex;
     gap: 0.5rem;
     justify-content: flex-start;
@@ -68,6 +71,7 @@
 
 .filterClear{
     color: var(--color-primary);
+    font-weight: 600;
 }
 
 .product-card-container{
@@ -76,3 +80,22 @@
     flex-wrap: wrap;
     row-gap: 2rem;
 }
+
+.priceRange{
+    margin-top:1rem;
+    font-weight: 600;
+}
+
+.price-range-div{
+    justify-content: space-between;
+}
+
+input{
+    cursor: pointer;
+}
+
+.radio-input,.checkbox-input{
+    height: 1rem;
+    width: 1rem;
+}
+

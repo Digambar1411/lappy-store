@@ -13,7 +13,7 @@ export const products = [
     price: "50000",
     processor:"core i5",
     ram:"8 GB",
-    rating:"5",
+    rating:"2",
     discount:"1000",
     offer:"35",
     details:
@@ -45,7 +45,7 @@ export const products = [
     price: "44,950",
     processor:"core i3",
     ram:"4 GB",
-    rating:"4",
+    rating:"1",
     discount:"1800",
     offer:"45",
     details:
@@ -93,7 +93,7 @@ export const products = [
     price: "79990",
     processor:"core i5",
     ram:"16 GB",
-    rating:"5",
+    rating:"3",
     discount:"4500",
     offer:"05",
     details:
@@ -122,7 +122,7 @@ export const products = [
     _id: uuid(),
     name:"Dell XPS",
     brand:"dell",
-    price: "1,11,890",
+    price: "111890",
     processor:"core i5",
     ram:"8 GB",
     rating:"4",
@@ -169,7 +169,7 @@ export const products = [
   {
     _id: uuid(),
     name:"Asus Vivobook 14",
-    brand:"Asus",
+    brand:"asus",
     price: "31980",
     processor:"core i3",
     ram:"8 GB",
@@ -201,11 +201,11 @@ export const products = [
   {
     _id: uuid(),
     name:"Asus Vivobook Ultra",
-    brand:"Asus",
+    brand:"asus",
     price: "40990",
     processor:"core i3",
     ram:"4 GB",
-    rating:"4",
+    rating:"3",
     discount:"1000",
     offer:"35",
     details:
@@ -221,7 +221,7 @@ export const products = [
     price: "64990",
     processor:"core i5",
     ram:"8 GB",
-    rating:"4",
+    rating:"2",
      discount:"6000",
     offer:"15",
     details:
@@ -253,7 +253,7 @@ export const products = [
       price: "40990",
       processor:"core i3",
       ram:"8 GB",
-      rating:"4",
+      rating:"3",
        discount:"1100",
     offer:"11",
       details:

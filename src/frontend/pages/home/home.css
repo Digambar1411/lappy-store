@@ -1,6 +1,9 @@
 :root{
     --light-dark:rgb(77, 75, 75);
     --ecom-background-color:rgb(250, 248, 246);
+    --deal-card-background:#F7F7F7;
+    --dark-sky-blue:#228deb;
+    --color-white:#FFFF;
 }
 
 .bg-image{
@@ -14,7 +17,7 @@
 
 .main-text{
     gap: 2.5em;
-    color: white;
+    color: var(--color-white);
     position: absolute;
     top: 50%;
     left: 50%;
@@ -35,7 +38,6 @@
 
 .deal-container{
     padding: 1rem;
-    margin-top: 1rem;
     width: 100%;
     flex-wrap: wrap; 
 }
@@ -56,25 +58,56 @@
     color: var(--light-dark);
     margin: 1rem auto;
 }
+
 .brand-cards{
     justify-content: space-around;
 }
 
 .home-body{
-    background-color: var(--ecom-backgroun-color);
+    background-color: rgb(231, 235, 238);
+    padding-bottom: 2rem;
 }
+
 .img-div{
     padding: 0.5rem;
 }
+
 .deal-card-img-size{
     width: 284px;
     height: 200px;
 }
 
-.card:hover{
+.deal-card:hover{
     cursor: pointer;
-    
 }
+
 .deal-card-title:hover{
     color: var(--color-primary);
+}
+
+.main-solid-btn{
+    border: none;
+    padding: 0.75rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    color: var(--color-white);
+    min-width: 10rem;
+    max-width: 15rem;
+    letter-spacing: 1px;
+    font-size: larger
+}
+
+.main-solid-btn:hover{
+    background-color:var(--dark-sky-blue) ;
+}
+
+.deal-card{
+    width: 300px;
+    height: 350px;
+    background-color: var(--deal-card-background);
+    box-shadow: 0 4px 4px 0 rgb(0 0 0 / 20%);
+    display: flex;
+    flex-direction: column;
+    border-radius: 4px;
+    padding: 1rem;
 }

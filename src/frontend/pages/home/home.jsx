@@ -20,7 +20,7 @@ export function Home() {
             <p className="site-info">INDIA'S LARGEST LAPTOP STORE</p>
             <p className="deal">Get best laptops deals with exciting offers</p>
             <div>
-              <button className="solid primary-solid" onClick={()=> Navigate('/products')} >Explore More</button>
+              <button className="main-solid-btn primary-solid" onClick={()=> Navigate('/products')} >Explore More</button>
             </div>
           </div>
         </div>
@@ -29,7 +29,7 @@ export function Home() {
           <div className="deal-container flex-col ">
             <p className="deal-heading flex center">BEST DEALS</p>
             <div className="brand-cards flex ">
-              <div className="card">
+              <div className="deal-card">
                 <div className="body">
                   <div className="img-div">
                     <img className="deal-card-img-size" src={ laptopImage }alt="samsung"/>
@@ -42,7 +42,7 @@ export function Home() {
                 </div>             
               </div>
 
-              <div className="card">
+              <div className="deal-card">
                 <div className="body">
                   <div className="img-div">
                     <img className="deal-card-img-size" src={ laptopImage }alt="laptop"/>
@@ -55,7 +55,7 @@ export function Home() {
                 </div>             
               </div>
 
-              <div className="card">
+              <div className="deal-card">
                 <div className="body">
                   <div className="img-div">
                     <img className="deal-card-img-size" src={ laptopImage }alt="laptop"/>
@@ -67,6 +67,7 @@ export function Home() {
                   </div>
                 </div>
               </div>
+
                     
             </div>
           </div>
