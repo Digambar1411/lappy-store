@@ -15,7 +15,6 @@ import { sortBypriceFunc,
 
 export function Products(){
 
-  
     const {state } = useFilter();
 
     const {sortPrice, priceRange, brands,ratings} = state;
@@ -24,10 +23,7 @@ export function Products(){
     const priceRangeFilteredProducts = filterByPriceRangeFunc(sortedProducts, priceRange); 
     const brandFilterProducts = filterByBrandFunc(priceRangeFilteredProducts, brands) 
     const finalProducts = filterByRatingFunc(brandFilterProducts, ratings)
-    
-    // console.log(finalProducts);
-
-    
+        
     return(
         <>
             {<Navbar/>}
