@@ -1,0 +1,70 @@
+:root{
+    --light-sky-blue:rgb(192, 210, 228);
+    --price-card-background:#fff;
+}
+
+.width-100{
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+.my-cart-title{
+    margin: 2rem auto;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+  
+}
+
+.price-card > .title{
+    font-size: 1.25rem; 
+}
+
+.space-btw{
+    justify-content: space-between;
+}
+
+.gap-1rem{
+    gap:1rem
+}
+
+.my-cart{
+    width: 80%;
+    margin: 3rem auto;
+    gap: 5rem;
+    padding: 1rem;
+    flex-wrap: wrap;
+        
+}
+
+.empty-title{
+    margin: 0rem auto;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+  
+}
+
+.price-card{
+    width: 20%;
+    background-color:var(--price-card-background);
+    padding:1.5rem 1rem;
+    gap:1rem;
+    height:fit-content;
+    position: fixed;
+    top:13rem;
+    right:11.5rem;
+    box-shadow: 0 4px 4px 0 rgb(0 0 0 / 20%);
+}
+
+.cart-product-section{
+    width:58%;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    gap:2rem;
+    
+}
+
+

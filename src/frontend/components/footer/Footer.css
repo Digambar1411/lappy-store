@@ -1,6 +1,6 @@
 :root{
     --light-color:rgb(230, 228, 228);
-    --ecom-footer-background:rgb(8, 8, 8);
+    --ecom-footer-background:rgb(54, 53, 53);
 }
 .ecom-footer{
     background-color: var(--ecom-footer-background);

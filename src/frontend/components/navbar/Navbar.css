@@ -46,3 +46,6 @@ form {
 .material-icons:hover, .material-icons-outlined:hover{
     cursor: pointer;
 }
+.material-icons-outlined,.material-icons.md-36 { 
+    font-size: 36px; 
+}
