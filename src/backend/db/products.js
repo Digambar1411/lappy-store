@@ -100,13 +100,13 @@ export const products = [
     _id: uuid(),
     name:"Dell G15",
     brand:"dell",
-    price: "79990",
-    originalPrice :84550,
+    price: "85095",
+    originalPrice :94550,
     processor:"core i5",
     ram:"16 GB",
     rating:"3",
     discount:"4500",
-    offer:"05",
+    offer:"10",
     quantity:1,
     details:
       `512 GB SSD/Windows 10 Home15IML05
