@@ -18,9 +18,15 @@ const CartProvider = ({children}) => {
     const newData=cart.filter(item=>item._id !== id)
     setCart(newData);
     
-}
+  }
+
+    const moveToWishlist = (id) =>{
+        const newData1=cart.filter(item=>item._id !== id)
+        setCart(newData1);
+    }
+
     return ( 
-        <CartContext.Provider value={{ cart, addToCart, removeFromCart}}>
+        <CartContext.Provider value={{ cart, addToCart, removeFromCart, moveToWishlist}}>
             {children}
         </CartContext.Provider>
 

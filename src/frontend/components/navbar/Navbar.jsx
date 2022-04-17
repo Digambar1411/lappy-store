@@ -1,11 +1,15 @@
 import React from "react";
 import { useNavigate } from 'react-router';
 import { useCart } from "../../contexts/cart-context"
+import { useWishlist } from "../../contexts/wishlist-context";
+
 import "./Navbar.css";
 
 export function Navbar() {
   const {cart } = useCart();
+  const {wishlist} = useWishlist();
     const navigate = useNavigate();
+
     return (
       <nav className="nav flex center">
         <div className="sitename" onClick= {()=>navigate("/")}><h2>Lappy Store</h2></div>
@@ -19,13 +23,14 @@ export function Navbar() {
         <div className="flex nav-icon center">
           <button className="solid primary-solid" onClick= {()=>navigate("/login")}>Login</button>
          
-          <div class="icon-w-badge">        
+          <div className="icon-w-badge">        
           <span className="material-icons-outlined md-36" onClick= {()=>navigate("/wishlist")}>favorite_border</span>
-            {/* {wishlist.length>0 && <span class="badge small-badge badge-on-icon">{wishlist.length}</span> } */}
+            {wishlist.length>0 && <span className="badge small-badge badge-on-icon">{wishlist.length}</span> }
           </div>
+
           <div class="icon-w-badge">        
             <span className="material-icons md-36" onClick= {()=>navigate("/cart")}>shopping_cart</span>
-            {cart.length>0 && <span class="badge small-badge badge-on-icon">{cart.length}</span> }
+            {cart.length>0 && <span className="badge small-badge badge-on-icon">{cart.length}</span> }
           </div>
         </div>
       </nav>
