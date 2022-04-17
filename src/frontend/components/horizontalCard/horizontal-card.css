@@ -1,6 +1,6 @@
 
 .horizontal-card{
-    height: 340px;
+    height: 320px;
     background: var(--card-background);
     box-shadow: 0 4px 4px 0 rgb(0 0 0 / 20%);
     border-radius: 4px;
@@ -10,8 +10,8 @@
 }
 
 .cart-card-image{
-    width: 18.75rem;
-    height: 13.5rem;
+    width: 18rem;
+    height: 13rem;
 }
 
 .item-count{
