@@ -4,8 +4,7 @@ const laptopImage = require('../../assets/laptop.png');
 
 
 const HorizontalCard = (product)=>{
-    const {cart } = useCart();
-
+  
     const {removeFromCart}= useCart()
     const incrementQuantity=(product)=>{
         // {cart.map((item)=>item._id===product._id) ? {...item, quantity:product.quantity+1} :item
