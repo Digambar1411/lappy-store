@@ -1,11 +1,15 @@
 import { useCart } from "../../contexts/cart-context";
+import { useWishlist } from "../../contexts/wishlist-context";
 import "./horizontal-card.css";
 const laptopImage = require('../../assets/laptop.png');
 
 
 const HorizontalCard = (product)=>{
   
-    const {removeFromCart}= useCart()
+    const {removeFromCart , moveToWishlist}= useCart()
+    const { addToWishList } = useWishlist();
+    
+    
     const incrementQuantity=(product)=>{
         // {cart.map((item)=>item._id===product._id) ? {...item, quantity:product.quantity+1} :item
        
@@ -52,7 +56,11 @@ const HorizontalCard = (product)=>{
 
             <div className="cart-btn-row">
                 <button className="btn-outline danger-outline" onClick={()=>removeFromCart(product._id)}>Remove </button>
-                <button className="solid secondary-solid">Move to WishList</button>
+                <button className="solid secondary-solid" onClick={()=>{
+                        addToWishList(product)
+                        moveToWishlist(product._id)
+                    }}
+                >Move to WishList</button>
             </div>
                     
         </div>

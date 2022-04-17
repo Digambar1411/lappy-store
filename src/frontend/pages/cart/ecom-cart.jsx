@@ -7,6 +7,8 @@ import { HorizontalCard } from "../../components/horizontalCard/horizontal-card"
 export function Cart(){
     const { cart } = useCart();
 
+  
+
     const deliveryCharge = 0;
     const TotalPrice =  cart.reduce((acc,cur)=>acc + Number(cur.originalPrice) * cur.quantity, 0);
     const TotalDiscount = cart.reduce((acc,cur)=>acc+ cur.originalPrice * (Number(cur.offer)/100),0);
