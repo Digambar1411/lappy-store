@@ -43,7 +43,7 @@ export function WishlistCard(product){
                     <button  className="solid primary-solid" onClick={()=>addToCart(product)}> Add to cart</button> 
 
                     <div>
-                        <button class="floating-btn delete"><span class="material-icons" onClick={()=>removeFromWishList(product._id)}>delete</span></button>
+                        <button className="floating-btn delete"><span class="material-icons" onClick={()=>removeFromWishList(product._id)}>delete</span></button>
                     </div>
                                          
             </div>
