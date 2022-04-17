@@ -10,12 +10,14 @@ export const products = [
     _id: uuid(),
     name:"Lenove IdeaPad 3",
     brand:"lenovo",
-    price: "50000",
+    price: "65250",
+    originalPrice :75000,
     processor:"core i5",
     ram:"8 GB",
     rating:"2",
     discount:"1000",
-    offer:"35",
+    offer:"13",
+    quantity:1,
     details:
       `512 GB SSD/Windows 10 Home15IML05
       Thin and Light Laptop  (
@@ -26,12 +28,14 @@ export const products = [
     _id: uuid(),
     name:"Lenove IdeaPad 3",
     brand:"lenovo",
-    price: "35000",
+    price: "27900",
+    originalPrice :45000,
     processor:"core i3",
     ram:"8 GB",
     rating:"4",
     discount:"2000",
     offer:"38",
+    quantity:1,
     details:
       `512 GB SSD/Windows 10 Home15IML05
       Thin and Light Laptop  (
@@ -42,12 +46,14 @@ export const products = [
     _id: uuid(),
     name:"Lenove ThinkPad E15",
     brand:"lenovo",
-    price: "44950",
+    price: "46750",
+    originalPrice :85000,
     processor:"core i3",
     ram:"4 GB",
     rating:"1",
     discount:"1800",
     offer:"45",
+    quantity:1,
     details:
       `256 GB SSD/Windows 10 Home15IML05
       Thin and Light Laptop  (
@@ -58,12 +64,14 @@ export const products = [
     _id: uuid(),
     name:"Lenove V15",
     brand:"lenovo",
-    price: "50000",
+    price: "64600",
+    originalPrice :76000,
     processor:"core i5",
     ram:"8 GB",
     rating:"3",
     discount:"5000",
     offer:"15",
+    quantity:1,
     details:
       `512 GB SSD/Windows 10 Home15IML05
       Thin and Light Laptop  (
@@ -74,12 +82,14 @@ export const products = [
     _id: uuid(),
     name:"Lenove IdeaPad Slim",
     brand:"lenovo",
-    price: "39999",
+    price: "47850",
+    originalPrice :55000,
     processor:"core i3",
     ram:"4 GB",
     rating:"3",
     discount:"900",
     offer:"13",
+    quantity:1,
     details:
       `256 GB SSD/Windows 10 Home15IML05
       Thin and Light Laptop  (
@@ -91,11 +101,13 @@ export const products = [
     name:"Dell G15",
     brand:"dell",
     price: "79990",
+    originalPrice :84550,
     processor:"core i5",
     ram:"16 GB",
     rating:"3",
     discount:"4500",
     offer:"05",
+    quantity:1,
     details:
       `512 GB SSD/Windows 10 Home15IML05
       Thin and Light Laptop  (
@@ -106,15 +118,17 @@ export const products = [
     _id: uuid(),
     name:"Dell inpiron 7501",
     brand:"dell",
-    price: "89990",
-    processor:"core i5",
+    price: "73500",
+    originalPrice :98000,
+    processor:"intel core i5",
     ram:"8 GB",
     rating:"3",
     discount:"1000",
-    offer:"35",
+    offer:"25",
+    quantity:1,
     details:
       `512 GB SSD/Windows 10 Home15IML05
-      Thin and Light Laptop, 4GB Graphics (
+      Thin and Light Laptop, (
       14.96 Inch, Platinum Grey, 1.7 kg, 
       With MS Office)`
   },
@@ -122,12 +136,14 @@ export const products = [
     _id: uuid(),
     name:"Dell XPS",
     brand:"dell",
-    price: "111890",
+    price: "91650",
+    originalPrice :141000,
     processor:"core i5",
     ram:"8 GB",
     rating:"4",
-     discount:"1000",
+    discount:"1000",
     offer:"35",
+    quantity:1,
     details:
       `512 GB SSD/Windows 10 Home15IML05
       Thin and Light Laptop  (
@@ -138,12 +154,14 @@ export const products = [
     _id: uuid(),
     name:"Dell Vostro ",
     brand:"dell",
-    price:"38990",
+    price:"45390",
+    originalPrice :51000,
     processor:"core i3",
     ram:"8 GB",
     rating:"4",
     discount:"1000",
-    offer:"35",
+    offer:"11",
+    quantity:1,
     details:
       `256 GB SSD/Windows 10 Home15IML05
       Thin and Light Laptop  (
@@ -154,12 +172,14 @@ export const products = [
     _id: uuid(),
     name:"Dell Inspiron",
     brand:"dell",
-    price: "42490",
+    price: "49300",
+    originalPrice :58000,
     processor:"core i3",
     ram:"8 GB",
     rating:"5",
     discount:"1000",
-    offer:"35",
+    offer:"15",
+    quantity:1,
     details:
       `1 TB HDD/Windows 10 Home15IML05
       Thin and Light Laptop  (
@@ -170,12 +190,14 @@ export const products = [
     _id: uuid(),
     name:"Asus Vivobook 14",
     brand:"asus",
-    price: "31980",
+    price: "33250",
+    originalPrice :35000,
     processor:"core i3",
     ram:"8 GB",
     rating:"4",
     discount:"1000",
-    offer:"35",
+    offer:"5",
+    quantity:1,
     details:
       `1 TB SSD/Windows 10 Home15IML05
       Thin and Light Laptop  (
@@ -186,12 +208,14 @@ export const products = [
     _id: uuid(),
     name:"Asus Vivobook 15",
     brand:"asus",
-    price: "50000",
+    price: "69700",
+    originalPrice :85000,
     processor:"core i3",
     ram:"4 GB",
     rating:"3",
     discount:"1000",
-    offer:"35",
+    offer:"18",
+    quantity:1,
     details:
       `1 TB SSD/Windows 10 Home15IML05
       Thin and Light Laptop  (
@@ -202,12 +226,14 @@ export const products = [
     _id: uuid(),
     name:"Asus Vivobook Ultra",
     brand:"asus",
-    price: "40990",
+    price: "48750",
+    originalPrice :75000,
     processor:"core i3",
     ram:"4 GB",
     rating:"3",
     discount:"1000",
     offer:"35",
+    quantity:1,
     details:
       `512 GB SSD/Windows 10 Home15IML05
       Thin and Light Laptop  (
@@ -218,12 +244,14 @@ export const products = [
     _id: uuid(),
     name:"Asus TUF",
     brand:"asus",
-    price: "64990",
+    price: "73100",
+    originalPrice :86000,
     processor:"core i5",
     ram:"8 GB",
     rating:"2",
-     discount:"6000",
+    discount:"6000",
     offer:"15",
+    quantity:1,
     details:
       `512 GB SSD/Windows 10 Home15IML05
       Thin and Light Laptop  (
@@ -234,44 +262,33 @@ export const products = [
   _id: uuid(),
     name:"HP Pavilion",
     brand:"hp",
-    price: "53990",
+    price: "71200",
+    originalPrice :89000,
     processor:"core i3",
     ram:"8 GB",
     rating:"3",
     discount:"1000",
-    offer:"35",
+    offer:"20",
+    quantity:1,
     details:
       `256 GB SSD/Windows 10 Home15IML05
       Thin and Light Laptop  (
       15.6 Inch, Platinum Grey, 1.7 kg, 
       With MS Office)`
   },
-  {
-    _id: uuid(),
-      name:"HP NoteBook",
-      brand:"hp",
-      price: "40990",
-      processor:"core i3",
-      ram:"8 GB",
-      rating:"3",
-       discount:"1100",
-    offer:"11",
-      details:
-        `1 TB SSD/Windows 10 Home15IML05
-        Thin and Light Laptop  (
-        14 Inch, Platinum Grey, 1.7 kg, 
-        With MS Office)`
-    },
+  
     {
       _id: uuid(),
         name:"HP Corer i7",
         brand:"hp",
-        price: "121997",
+        price: "124000",
+        originalPrice :155000,
         processor:"core i7",
         ram:"16 GB",
         rating:"5",
         discount:"1000",
-        offer:"35",
+        offer:"20",
+        quantity:1,
         details:
           `512 GB SSD/Windows 10 Home15IML05
           Thin and Light Laptop  (

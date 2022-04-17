@@ -5,15 +5,17 @@ import App from "./App";
 import { makeServer } from "./server";
 import { BrowserRouter } from "react-router-dom";
 import { FilterProvider } from "./frontend/contexts/filter-context"
+import { CartProvider } from "./frontend/contexts/cart-context"
 
-// Call make Server
 makeServer();
 
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
       <FilterProvider>
-        <App />
+        <CartProvider>
+          <App />
+        </CartProvider>
       </FilterProvider>
     </BrowserRouter>
   </React.StrictMode>,
