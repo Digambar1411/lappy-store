@@ -99,3 +99,7 @@ input{
     width: 0.75rem
 }
 
+.filterClear:hover{
+    cursor:pointer
+}
+

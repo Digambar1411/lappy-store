@@ -6,20 +6,9 @@ const laptopImage = require('../../assets/laptop.png');
 
 const HorizontalCard = (product)=>{
   
-    const {removeFromCart , moveToWishlist}= useCart()
+    const {removeFromCart , moveToWishlist, incrementQuantity,decrementQuantity}= useCart()
     const { addToWishList } = useWishlist();
-    
-    
-    const incrementQuantity=(product)=>{
-        // {cart.map((item)=>item._id===product._id) ? {...item, quantity:product.quantity+1} :item
-       
-    }
-
-    const decrementQuantity=(product)=>{
-        // {cart.map((item)=>item._id===product.id)?{...item, quantity:product.quantity-1} :item
-
-    }
-                  
+                      
     return(
         <div className="horizontal-card">
             <div className="flex">
@@ -42,18 +31,9 @@ const HorizontalCard = (product)=>{
                         <p className="text-strike-through">{product.originalPrice}</p>
                         <p className="text-lightblue"> {product.offer}% off</p>
                     </div>
-                            
                 </div>
-        
             </div>
-            {/* <div className="cart-btn-row">
-               <div className="cart-btn">
-                    <button className="btn-outline danger-outline" onClick={()=>removeFromCart(product._id)}>Remove </button>
-                    <button className="solid secondary-solid">Move to WishList</button>
-               </div>
-                <p className="bold-larger">Total Price:560000</p>
-            </div> */}
-
+            
             <div className="cart-btn-row">
                 <button className="btn-outline danger-outline" onClick={()=>removeFromCart(product._id)}>Remove </button>
                 <button className="solid secondary-solid" onClick={()=>{
@@ -62,11 +42,8 @@ const HorizontalCard = (product)=>{
                     }}
                 >Move to WishList</button>
             </div>
-                    
         </div>
- 
     )
-
 }
 export { HorizontalCard }
 
