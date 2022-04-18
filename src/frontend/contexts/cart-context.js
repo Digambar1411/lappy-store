@@ -26,7 +26,7 @@ const CartProvider = ({children}) => {
   }
 
   const decrementQuantity=(product)=>{
-    setCart(cart.map(item=>item._id===product._id ? {...item,quantity:item.quantity-1} :item))
+    setCart(cart.map(item=>item._id===product._id ? {...item,quantity:(item.quantity ? 1 : 0)} :item))
 
   }
 
