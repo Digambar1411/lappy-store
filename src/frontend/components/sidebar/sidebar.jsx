@@ -1,6 +1,5 @@
 import {useFilter } from "../../contexts/filter-context";
 import "../../pages/products/products.css";
-import {Link } from "react-router-dom";
 
 const Sidebar =()=>{
 
@@ -24,7 +23,7 @@ const Sidebar =()=>{
     <div className="aside">
         <div className="flex flex-space-btwn center">
             <p className="filter-heading">FILTERS</p>
-            <Link className="filterClear text-underline" to="/">CLEAR</Link>
+            <p className="filterClear text-underline" onClick={()=>dispatch({type:"CLEAR"})}>CLEAR</p>
         </div>
         <hr className="divider flex"></hr>
 
