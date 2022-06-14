@@ -1,8 +1,8 @@
-import React from "react";
+import React,{ useEffect , useState} from "react";
+import axios from "axios";
 import { Navbar } from "../../components/navbar/Navbar";
 import { Footer } from "../../components/footer/Footer";
 import "./products.css";
-import { products as data } from '../../../backend/db/products';
 import { ProductCard } from "../../components/ecomcards/ProductCard";
 import { useFilter } from "../../contexts/filter-context";
 import { Sidebar } from "../../components/sidebar/sidebar";
@@ -15,11 +15,23 @@ import { sortBypriceFunc,
 
 export function Products(){
 
+    const [products, setProducts] = useState([]);
+
+        const getProducts = async()=>{
+            const response = await axios.get("/api/products");
+            setProducts(response.data.products);
+            console.log(response.data.products);
+        }
+   
+    useEffect(()=>{
+        getProducts();
+    },[]);
+
     const {state } = useFilter();
 
     const {sortPrice, priceRange, brands,ratings} = state;
 
-    const sortedProducts = sortBypriceFunc(data,sortPrice); 
+    const sortedProducts = sortBypriceFunc(products,sortPrice); 
     const priceRangeFilteredProducts = filterByPriceRangeFunc(sortedProducts, priceRange); 
     const brandFilterProducts = filterByBrandFunc(priceRangeFilteredProducts, brands) 
     const finalProducts = filterByRatingFunc(brandFilterProducts, ratings)
