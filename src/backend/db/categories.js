@@ -21,7 +21,7 @@ export const categories = [
   },
   {
     _id: uuid(),
-    categoryName: "Thin & Light Laptop",
+    categoryName: "Thin and Light Laptop",
     description:
       "Reimagine the Way Your Kids Learn No Cost EMI & more",
   }

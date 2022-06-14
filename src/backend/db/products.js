@@ -265,7 +265,7 @@ export const products = [
     quantity:1,
     details:
       `512 GB SSD/Windows 10 Home15IML05
-      (15.6 Inch, Platinum Grey, 1.7 kg, 
+      Gaming Laptop (15.6 Inch, Platinum Grey, 1.7 kg, 
       With MS Office)`
   },
   {
@@ -283,7 +283,7 @@ export const products = [
     quantity:1,
     details:
       `256 GB SSD/Windows 10 Home15IML05
-      Thin and Light Laptop  (
+      Gaming Laptop  (
       15.6 Inch, Platinum Grey, 1.7 kg, 
       With MS Office)`
   },
