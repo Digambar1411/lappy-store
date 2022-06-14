@@ -1,10 +1,10 @@
-import React,{ useEffect , useState} from "react";
-import axios from "axios";
+import React from "react";
 import { Navbar } from "../../components/navbar/Navbar";
 import { Footer } from "../../components/footer/Footer";
 import "./products.css";
 import { ProductCard } from "../../components/ecomcards/ProductCard";
 import { useFilter } from "../../contexts/filter-context";
+import { useProduct } from "../../contexts/product-context";
 import { Sidebar } from "../../components/sidebar/sidebar";
 import { sortBypriceFunc,
         filterByPriceRangeFunc,
@@ -15,18 +15,7 @@ import { sortBypriceFunc,
 
 export function Products(){
 
-    const [products, setProducts] = useState([]);
-
-        const getProducts = async()=>{
-            const response = await axios.get("/api/products");
-            setProducts(response.data.products);
-            console.log(response.data.products);
-        }
-   
-    useEffect(()=>{
-        getProducts();
-    },[]);
-
+    const {products} =  useProduct();
     const {state } = useFilter();
 
     const {sortPrice, priceRange, brands,ratings} = state;
