@@ -16,5 +16,7 @@ const filterByBrandFunc =(data,state)=> state.length===0 ? data : data.filter(it
 
 const filterByRatingFunc =(data,state)=> state ? data.filter(item=>Number(item.rating) >= Number(state)): data
 
+const filterByCategoryFunc =(data,state)=> state.length===0 ? data : data.filter(item=>state.includes(item.category))
 
-export { filterByBrandFunc, filterByPriceRangeFunc, filterByRatingFunc, sortBypriceFunc}
+
+export { filterByBrandFunc, filterByPriceRangeFunc, filterByRatingFunc, sortBypriceFunc, filterByCategoryFunc}

@@ -9,7 +9,8 @@ import { Sidebar } from "../../components/sidebar/sidebar";
 import { sortBypriceFunc,
         filterByPriceRangeFunc,
         filterByBrandFunc,
-        filterByRatingFunc 
+        filterByRatingFunc,
+        filterByCategoryFunc
     } from "../../utils/filter-functions";
 
 
@@ -18,9 +19,11 @@ export function Products(){
     const {products} =  useProduct();
     const {state } = useFilter();
 
-    const {sortPrice, priceRange, brands,ratings} = state;
-
-    const sortedProducts = sortBypriceFunc(products,sortPrice); 
+    const {sortPrice, priceRange, brands,ratings, category} = state;
+    
+    const categoryProducts = filterByCategoryFunc(products,category);
+    console.log(categoryProducts);
+    const sortedProducts = sortBypriceFunc(categoryProducts,sortPrice); 
     const priceRangeFilteredProducts = filterByPriceRangeFunc(sortedProducts, priceRange); 
     const brandFilterProducts = filterByBrandFunc(priceRangeFilteredProducts, brands) 
     const finalProducts = filterByRatingFunc(brandFilterProducts, ratings)

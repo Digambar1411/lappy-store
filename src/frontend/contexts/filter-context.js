@@ -17,15 +17,19 @@ const FilterProvider =({children}) =>{
 
             case "FILTER_BY_BRAND":
                 return {...state, brands:state.brands.includes(action.payload) ? state.brands.filter((i) => i !== action.payload) : [...state.brands, action.payload] }
-
+            
             case "FILTER_BY_RATING":
                 return {...state, ratings:action.payload}
+
+            case "FILTER_BY_CATEGORY":
+                return {...state, category:state.category.includes(action.payload) ? state.category.filter((i) => i !== action.payload) : [...state.category, action.payload] }
 
             case "CLEAR":
                 return {
                     sortPrice:null,
                     priceRange:"",
                     brands:[],
+                    category:[],
                     ratings:null
                 }
 
@@ -34,6 +38,7 @@ const FilterProvider =({children}) =>{
                     sortPrice:null,
                     priceRange:"",
                     brands:[],
+                    category:[],
                     ratings:null
                 }
             }
@@ -44,12 +49,13 @@ const FilterProvider =({children}) =>{
         sortPrice:null,
         priceRange:"",
         brands:[],
+        category:[],
         ratings:null
     }
 
-    const [state, dispatch] = useReducer(reducerFunc,initialValues)
+    const [state, dispatch] = useReducer(reducerFunc, initialValues)
 
-    return  <filterContext.Provider value={{state,dispatch}}>
+    return  <filterContext.Provider value={{state, dispatch}}>
         {children}
     </filterContext.Provider>
 
