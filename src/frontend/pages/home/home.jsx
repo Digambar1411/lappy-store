@@ -2,8 +2,9 @@ import React from "react";
 import "./home.css";
 import { Navbar } from  "../../components/navbar/Navbar";
 import { Footer } from "../../components/footer/Footer";
-import { useNavigate } from "react-router-dom";
+import { useNavigate} from "react-router-dom";
 import { useCategory } from "../../contexts/category-context";
+import { useFilter} from "../../contexts/filter-context";
 export const laptopImage = require('../../assets/laptop.png');
 const dellLogo = require('../../assets/dell-144.png');
 const hpLogo = require('../../assets/hp-144.png');
@@ -12,10 +13,17 @@ const asusLogo = require('../../assets/asus-144.png');
 
 
 export function Home() {
+  const { categories }= useCategory();
+  const { dispatch } = useFilter();
+  const navigate = useNavigate();
+  // const { pathname } = useLocation();
 
-  const {categories}= useCategory();
-  const Navigate = useNavigate();
-
+  // useEffect(()=>{
+  //   if(pathname === "/"){
+  //     dispatch({type:"CLEAR"});
+  //   }
+  // });
+  
   return (
       <div>
         <Navbar /> 
@@ -24,7 +32,7 @@ export function Home() {
             <p className="site-info">INDIA'S LARGEST LAPTOP STORE</p>
             <p className="deal">Get best laptops deals with exciting offers</p>
             <div>
-              <button className="main-solid-btn primary-solid" onClick={()=> Navigate('/products')} >Explore More</button>
+              <button className="main-solid-btn primary-solid" onClick={()=> navigate('/products')} >Explore More</button>
             </div>
           </div>
         </div>
@@ -33,20 +41,36 @@ export function Home() {
           <div className="deal-container flex-col ">
             <p className="deal-heading flex center">BEST DEALS</p>
             <div className="brand-cards flex ">
-              {categories && categories.map(category=>(
-                <div className="deal-card">
+
+              {categories && categories.map((category)=> {const {_id, categoryName, description } = category;
+
+                return (
+                <div className="deal-card" key={_id} onClick={() => 
+                  {
+
+                    // clear any category previously selected
+                    dispatch({type:"CLEAR"});
+                    
+                    // fetch product of selected category and navigate to products page
+                    dispatch({
+                      type: "FILTER_BY_CATEGORY",
+                      payload: categoryName
+                    });
+
+                    navigate("/products");
+                  }}>
                 <div className="body">
                   <div className="img-div">
                     <img className="deal-card-img-size" src={ laptopImage }alt="samsung"/>
                   </div>
           
                   <div className="body-content div-padding">
-                    <h3 className="deal-card-title" onClick={()=> Navigate('/products')}>{category.categoryName}</h3>
-                    <h4 className="card-sub-title">{category.description}</h4>
+                    <h3 className="deal-card-title">{categoryName}</h3>
+                    <h4 className="card-sub-title">{description}</h4>
                   </div>
                 </div>             
               </div>
-              ))}
+              )})}
               
                     
             </div>
