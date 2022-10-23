@@ -1,3 +1,30 @@
-## E-Commerce Backend
+## E-Commerce Web App
 
-This folder contains the Mock Backend created for E-Commerce App. It contains different API end-points and database configuration for building E-Commerce; so that you can focus on building Frontend.
+Preview Link : https://neo-tube.netlify.app/
+
+## Run Locally
+
+Clone the project
+
+```bash
+  git clone https://github.com/Digambar1411/neo-tube.git
+```
+
+## Features Available.
+
+- Home Page
+- Products listing page
+- Cart page
+- Wishlist page
+- sorting and filtering the products
+- Authentication
+  - *Login*
+  - *Signup*
+  - *Guest Login*
+- Resposive Web app
+
+## Tech Stack
+
+**Client :** React, Context API, Reducer, React Router v6, Component Library.
+
+**Server :** Mockbee.
