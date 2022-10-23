@@ -1,13 +1,13 @@
 ## E-Commerce Web App
 
-Preview Link : https://neo-tube.netlify.app/
+Preview Link :https://lappy-store.netlify.app/
 
 ## Run Locally
 
 Clone the project
 
 ```bash
-  git clone https://github.com/Digambar1411/neo-tube.git
+  git clone https://github.com/Digambar1411/lappy-store.git
 ```
 
 ## Features Available.
