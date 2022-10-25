@@ -9,7 +9,8 @@ import {
   CartProvider, 
   WishlistProvider, 
   ProductProvider,
-  CategoryProvider
+  CategoryProvider,
+  AuthProvider
 } from "./frontend/contexts/index.js"
 
 
@@ -19,6 +20,7 @@ makeServer();
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
+    <AuthProvider>
         <ProductProvider>
           <CategoryProvider>
             <FilterProvider>
@@ -28,8 +30,9 @@ ReactDOM.render(
                 </WishlistProvider>
               </CartProvider>
             </FilterProvider>
-            </CategoryProvider>
+          </CategoryProvider>
         </ProductProvider>
+      </AuthProvider>
     </BrowserRouter>
   </React.StrictMode>,
   document.getElementById("root")

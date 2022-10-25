@@ -8,6 +8,7 @@ import {
       Wishlist, 
       Products, 
       PageNotFound } from  "./frontend/pages";
+import { PrivateRoutes } from "./frontend/components/private routes/privateRoutes";
 
 function App() {
   return (
@@ -16,8 +17,14 @@ function App() {
         <Route path= "/" element = { <Home/> }/>
         <Route path= "/login" element = { <Login/> }/>
         <Route path= "/signup" element = { <Signup/> }/>
-        <Route path= "/cart" element = { <Cart/> }/>
-        <Route path= "/wishlist" element = { <Wishlist/> }/>
+        <Route path= "/cart" element = { 
+          <PrivateRoutes>
+            <Cart/>
+          </PrivateRoutes> }/>
+        <Route path= "/wishlist" element = { 
+          <PrivateRoutes>
+            <Wishlist/>
+          </PrivateRoutes> }/>
         <Route path= "/products" element = { <Products/> }/>
         <Route path= "*" element = { <PageNotFound/> }/>
       </Routes>  
