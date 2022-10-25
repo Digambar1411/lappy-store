@@ -1,17 +1,24 @@
 import {createContext, useContext,useState} from "react";
+import { useNavigate } from "react-router-dom";
+import { useAuth} from "./auth-context"
 
 const CartContext = createContext();
 
 const useCart = () => useContext(CartContext);
 
 const CartProvider = ({children}) => {
-
+  const { authState:{isLoggedIn}}= useAuth();
+  const navigate = useNavigate();
   const [cart, setCart] = useState([]);
  
 
   const addToCart =(product) =>{
-     setCart(prevProd=>[...prevProd,product]) 
-      
+    if(isLoggedIn){
+      setCart(prevProd=>[...prevProd,product]) 
+    }
+    else{
+      navigate("/login")
+    }
   }
 
   const removeFromCart =(id) =>{
