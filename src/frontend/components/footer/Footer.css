@@ -8,6 +8,8 @@
     padding: 2rem 0rem;
     height: 10rem;
     justify-content: space-around;
+    box-sizing: border-box;
+    width: 100%;
 }
 
 .footer-links{
@@ -16,13 +18,13 @@
 
 .footer-link, .social-icon, .brand{
     color:var(--color-white);
+    cursor: pointer;
 }
 .brandName{
     font-size:2em;
     color: var(--color-primary);
 }
 .footer-link:hover, .social-icon:hover{
-    cursor: pointer;
     color:var(--color-primary);
 }
 
