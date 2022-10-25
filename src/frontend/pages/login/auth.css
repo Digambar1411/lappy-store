@@ -74,20 +74,31 @@ body{
 }
 
 .login-btn{
-    background-color:var(--color-primary);
     color: #FFF;
-    border: none;
     margin-top: 8px;
     padding: 0.5rem 1rem;
     border-radius:5px;
     text-decoration: none;
     font-size: larger;
+    cursor: pointer;
+}
+
+.solid-login{
+    background-color:var(--color-primary);
+    border: none;
+}
+
+.outline-login{
+    border:1px solid var(--color-primary);
+    color: black;
+}
+
+.outline-login:hover{
+    color: #FFF;
 }
 
 .login-btn:hover{
     background-color: var(--color-btn-hover);
-    cursor: pointer;
-
 }
 
 .input:hover{
