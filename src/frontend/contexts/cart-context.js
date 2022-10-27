@@ -1,31 +1,44 @@
 import {createContext, useContext,useState} from "react";
-import { useNavigate } from "react-router-dom";
 import { useAuth} from "./auth-context"
+import axios from "axios";
 
 const CartContext = createContext();
 
 const useCart = () => useContext(CartContext);
 
 const CartProvider = ({children}) => {
-  const { authState:{isLoggedIn}}= useAuth();
-  const navigate = useNavigate();
+  const { authState:{token}}= useAuth();
   const [cart, setCart] = useState([]);
- 
+  
+	const addToCart = async (product) => {
+		try {
+			const response = await axios.post("/api/user/cart", 
+      {
+        product
+      },
+      {
+        headers: {
+          	authorization: token,
+          			},
+      });
+      setCart(response.data.cart)
+		} catch (error) {
+			console.error(error);
+		}
+	};
 
-  const addToCart =(product) =>{
-    if(isLoggedIn){
-      setCart(prevProd=>[...prevProd,product]) 
-    }
-    else{
-      navigate("/login")
-    }
-  }
-
-  const removeFromCart =(id) =>{
-    const newData=cart.filter(item=>item._id !== id)
-    setCart(newData);
-    
-  }
+	const removeFromCart = async (productId) => {
+		try {
+			const response = await axios.delete(`/api/user/cart/${productId}`, {
+				headers: {
+					authorization: token,
+				},
+			});
+      setCart(response.data.cart)
+		} catch (error) {
+			console.error(error);
+		}
+	};
 
   const incrementQuantity=(product)=>{
     setCart(cart.map(item=>item._id===product._id ? {...item,quantity:item.quantity+1} :item))

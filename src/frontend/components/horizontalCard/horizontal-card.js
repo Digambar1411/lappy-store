@@ -3,10 +3,8 @@ import { useWishlist } from "../../contexts/wishlist-context";
 import "./horizontal-card.css";
 const laptopImage = require('../../assets/laptop.png');
 
-
-const HorizontalCard = (product)=>{
-  
-    const {removeFromCart , moveToWishlist, incrementQuantity,decrementQuantity}= useCart()
+const HorizontalCard = (product)=>{  
+    const {removeFromCart , incrementQuantity,decrementQuantity}= useCart()
     const { addToWishList } = useWishlist();
                       
     return(
@@ -38,7 +36,6 @@ const HorizontalCard = (product)=>{
                 <button className="btn-outline danger-outline" onClick={()=>removeFromCart(product._id)}>Remove </button>
                 <button className="solid secondary-solid" onClick={()=>{
                         addToWishList(product)
-                        moveToWishlist(product._id)
                     }}
                 >Move to WishList</button>
             </div>

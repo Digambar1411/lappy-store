@@ -1,20 +1,44 @@
 import {createContext, useContext, useState} from "react";
+import axios from "axios";
+import { useAuth } from "./auth-context";
 
 const WishlistContext = createContext();
 const useWishlist = ()=>useContext(WishlistContext);
 
 const WishlistProvider = ({children})=>{
 
-    const [wishlist, setWishlist]= useState([]);
+	const [wishlist, setWishlist]= useState([]);
+	const { authState:{token}}= useAuth();
 
-    const addToWishList = (product) =>{
-        setWishlist((prevProd)=>[...prevProd,product]);
-    }
+	const removeFromWishList = async (productId) => {
+		try {
+			const response = await axios.delete(`/api/user/wishlist/${productId}`, {
+				headers: {
+					authorization: token,
+				},
+			});
+			setWishlist(response.data.wishlist);
+		} catch (error) {
+			console.error(error);
+		}
+	};
 
-    const removeFromWishList = (id)=>{
-        const newData=wishlist.filter(item=>item._id !== id)
-        setWishlist(newData);
-    }
+	const addToWishList = async (product) => {
+		try {
+			const response = await axios.post("/api/user/wishlist",
+			{
+				product
+			},{
+				headers: {
+					authorization: token,
+				},
+			});
+			setWishlist(response.data.wishlist);
+		} catch (error) {
+			console.error(error);
+		}
+	};
+
 
     return ( < WishlistContext.Provider value={{wishlist, addToWishList, removeFromWishList}} > 
             {children} 
