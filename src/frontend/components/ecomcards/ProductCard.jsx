@@ -1,5 +1,4 @@
 import React from "react";
-import { laptopImage } from "../../pages/home/home";
 import "./productCard.css";
 import { useCart } from "../../contexts/cart-context";
 import { useNavigate } from "react-router";
