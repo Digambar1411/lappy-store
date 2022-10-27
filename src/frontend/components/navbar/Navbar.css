@@ -13,6 +13,10 @@
     max-width: 100%;
 }
 
+.sitename{
+    cursor: pointer;
+}
+
 .nav-icon{
     gap:1rem;
 }

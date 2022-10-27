@@ -36,6 +36,7 @@ const HorizontalCard = (product)=>{
                 <button className="btn-outline danger-outline" onClick={()=>removeFromCart(product._id)}>Remove </button>
                 <button className="solid secondary-solid" onClick={()=>{
                         addToWishList(product)
+                        removeFromCart(product._id)
                     }}
                 >Move to WishList</button>
             </div>

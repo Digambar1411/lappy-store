@@ -21,12 +21,14 @@ const Sidebar =()=>{
     return(
 
     <div className="aside">
-        <div className="flex flex-space-btwn center">
-            <p className="filter-heading">FILTERS</p>
-            <p className="filterClear text-underline" onClick={()=>dispatch({type:"CLEAR"})}>CLEAR</p>
+        <div className="aside-heading">
+            <div className="flex flex-space-btwn center">
+                <p className="filter-heading">FILTERS</p>
+                <p className="filterClear text-underline" onClick={()=>dispatch({type:"CLEAR"})}>CLEAR</p>
+            </div>
+            <hr className="divider flex"></hr>
         </div>
-        <hr className="divider flex"></hr>
-
+        
         <div className="flex-col">
            <div className="flex price-range-div">
                 <label htmlFor="myRange" className="filter-title">Price Range</label>
