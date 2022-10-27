@@ -42,7 +42,7 @@ export function Home() {
             <p className="deal-heading flex center">BEST DEALS</p>
             <div className="brand-cards flex ">
 
-              {categories && categories.map((category)=> {const {_id, categoryName, description } = category;
+              {categories && categories.map((category)=> {const {_id, categoryName, description, image } = category;
 
                 return (
                 <div className="deal-card" key={_id} onClick={() => 
@@ -61,7 +61,7 @@ export function Home() {
                   }}>
                 <div className="body">
                   <div className="img-div">
-                    <img className="deal-card-img-size" src={ laptopImage }alt="samsung"/>
+                    <img className="deal-card-img-size" src={ image }alt="samsung"/>
                   </div>
           
                   <div className="body-content div-padding">
@@ -79,17 +79,17 @@ export function Home() {
           <div>
             <p className="deal-heading center flex">Featured Brands</p>
             <div className="deal-container flex center">
-              <div className="brand">
+              <div className="laptop-brand">
                   <img className="brandLogo" src={ dellLogo } alt="dellLogo" />
                 </div>
                 
-                <div className="brand">
+                <div className="laptop-brand">
                     <img  className="brandLogo" src={ hpLogo } alt="hpLogo" />
                 </div>
-                <div className="brand">
+                <div className="laptop-brand">
                     <img className="brandLogo" src={ samsungLogo }alt="samsungLogo"/>
                 </div>
-                <div className="brand"> 
+                <div className="laptop-brand"> 
                 <img className="brandLogo" src={ asusLogo } alt="asusLogo"/>
                 </div>
             </div>
