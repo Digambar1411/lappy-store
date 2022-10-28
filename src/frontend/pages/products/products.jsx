@@ -22,7 +22,6 @@ export function Products(){
     const {sortPrice, priceRange, brands,ratings, category} = state;
     
     const categoryProducts = filterByCategoryFunc(products,category);
-    console.log(categoryProducts);
     const sortedProducts = sortBypriceFunc(categoryProducts,sortPrice); 
     const priceRangeFilteredProducts = filterByPriceRangeFunc(sortedProducts, priceRange); 
     const brandFilterProducts = filterByBrandFunc(priceRangeFilteredProducts, brands) 
