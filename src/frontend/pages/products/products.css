@@ -3,12 +3,12 @@
 }
 
 .aside{
-    width: 19%;
+    width: 18%;
+    min-width:260px;
     margin-top:1rem;
     padding-right: 1rem;
     padding-bottom: 1rem;
-    padding-left: 1rem;
-    margin-left: 1rem;
+    padding-left: 2rem;
     overflow-y: scroll;
     top:5rem;
     position: fixed;
@@ -26,7 +26,7 @@
 .main-bar{
     top: 10px;
     position: sticky;
-    margin-left: 300px;
+    margin-left: 310px;
     margin-top:1rem;
     padding:1rem 2rem;  
 }
@@ -114,5 +114,22 @@ input{
 
 .filterClear:hover{
     cursor:pointer
+}
+
+::-webkit-scrollbar {
+    height: 12px;
+    width: 12px;
+    background: rgb(239, 242, 243);
+    -webkit-border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background:  rgb(202, 214, 217);
+    -webkit-border-radius: 10px;
+    -webkit-box-shadow: 0px 1px 2px rgba(193, 207, 211,0.75);
+}
+
+::-webkit-scrollbar-corner {
+    background:  rgb(193, 207, 211);
 }
 
