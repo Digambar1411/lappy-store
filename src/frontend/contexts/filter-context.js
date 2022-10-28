@@ -24,6 +24,9 @@ const FilterProvider =({children}) =>{
             case "FILTER_BY_CATEGORY":
                 return {...state, category:state.category.includes(action.payload) ? state.category.filter((i) => i !== action.payload) : [...state.category, action.payload] }
 
+            case "SEARCH_FILTER":
+                return {...state, brands:state.brands.filter(brand=>brand.toLowerCase().includes(action.payload.toLowerCase()))
+            }
             case "CLEAR":
                 return {
                     sortPrice:null,

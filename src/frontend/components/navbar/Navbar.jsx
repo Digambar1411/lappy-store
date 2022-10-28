@@ -4,12 +4,14 @@ import { useCart } from "../../contexts/cart-context";
 import { useWishlist } from "../../contexts/wishlist-context";
 import { useAuth } from "../../contexts/auth-context";
 import "./Navbar.css";
+import { useFilter } from "../../contexts/filter-context";
 
 export function Navbar() {
 	const { cart } = useCart();
 	const { wishlist } = useWishlist();
 	const {authState: {isLoggedIn  },logoutHandler} = useAuth();
 	const navigate = useNavigate();
+	const {dispatch} = useFilter();
 
 	return (
 		<nav className="nav flex center">
@@ -17,16 +19,22 @@ export function Navbar() {
 				<h2>Lappy Store</h2>
 			</div>
 			<div className="wrapper">
-				<form action="">
 					<input
 						className="search-input"
 						type="text"
 						name=""
 						id=""
 						placeholder="What are you looking for?"
+						onChange={(e)=>
+
+							console.log(e.target.value)
+							// dispatch({
+							// 	type:"SEARCH_FILTER", 
+							// 	payload:e.target.value
+							// })
+						}
 					/>
-					<button className="solid primary-solid search-btn">Search</button>
-				</form>
+					{/* <button className="solid primary-solid search-btn">Search</button> */}
 			</div>
 
 			<div className="flex nav-icon center">
