@@ -1,5 +1,4 @@
 import React from "react";
-import { laptopImage } from "../../pages/home/home";
 import "./productCard.css";
 import { useCart } from "../../contexts/cart-context";
 import { useNavigate } from "react-router";
@@ -12,7 +11,7 @@ export function ProductCard(product) {
 		<div key={product.id} className="card">
 			<div className="body">
 				<div className="img-div">
-					<img className="card-Image" src={laptopImage} alt="laptop" />
+					<img className="card-Image" src={product.image} alt="laptop" />
 				</div>
 
 				<div className="body-content div-padding">

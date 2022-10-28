@@ -43,9 +43,12 @@
     box-sizing: border-box;
 }
 
-.brand{
+.laptop-brand{
     width: 20%;
     height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .brandLogo:hover{

@@ -10,7 +10,7 @@ const AuthProvider = ({ children }) => {
 
 	const initialValue = {
 		isLoggedIn: false,
-		token: localStorage.getItem("token") | [],
+		token: localStorage.getItem("token") || [],
 		user: localStorage.getItem("user"),
 	};
 

@@ -1,16 +1,36 @@
 .main-products-page{
-    width: 100%;
-    margin: 1rem 0;
-    padding: 0;
-    display: grid;
-    grid-template-columns: 1fr 4fr;
-    background-color:var(--ecom-background-color);
+    position: relative;
+}
+
+.aside{
+    width: 18%;
+    min-width:260px;
+    margin-top:1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+    overflow-y: scroll;
+    top:5rem;
+    position: fixed;
+    bottom:0px;
+    padding-bottom: 15rem;
+}
+
+.aside-heading{
+    position: sticky;
+    background-color: #F5F8FC;
+    top: 0rem;
+    margin-top: 1rem;
 }
 
 .main-bar{
+    top: 10px;
+    position: sticky;
+    margin-left: 310px;
     margin-top:1rem;
     padding:1rem 2rem;  
 }
+
 .card-Image{
     width: 17.75rem;
     height: 12.5rem;
@@ -19,13 +39,6 @@
 .main-bar-heading{
     padding-bottom: 1rem;
     font-size: 1.5rem;
-}
-
-.aside{
-    margin-top:1rem;
-    padding: 1rem;
-    margin-left: 1rem;
-    overflow-y: scroll;
 }
 
 .divider{
@@ -101,5 +114,22 @@ input{
 
 .filterClear:hover{
     cursor:pointer
+}
+
+::-webkit-scrollbar {
+    height: 12px;
+    width: 12px;
+    background: rgb(239, 242, 243);
+    -webkit-border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background:  rgb(202, 214, 217);
+    -webkit-border-radius: 10px;
+    -webkit-box-shadow: 0px 1px 2px rgba(193, 207, 211,0.75);
+}
+
+::-webkit-scrollbar-corner {
+    background:  rgb(193, 207, 211);
 }
 

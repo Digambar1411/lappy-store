@@ -8,8 +8,9 @@
     padding: 2rem 0rem;
     height: 10rem;
     justify-content: space-around;
-    box-sizing: border-box;
     width: 100%;
+    position: relative;
+    bottom:0px
 }
 
 .footer-links{

@@ -13,12 +13,17 @@
     max-width: 100%;
 }
 
+.sitename{
+    cursor: pointer;
+}
+
 .nav-icon{
     gap:1rem;
 }
 
 .wrapper{
     max-width:43rem;
+    width:40rem;
     border-radius: 5px;
     padding: 1rem;
 }
@@ -34,13 +39,17 @@ form {
 }  
   
 .search-input {
-    width:12rem;
+    width:100%;
     flex-grow: 1;
-    border: 2px solid var(--search-input-border);
+    border: 1px solid var(--search-input-border);
     border-radius: 50px;
     font-size:1rem;
-    padding: 8px;
+    padding: 8px 1rem;
     margin-right: 12px;
+}
+
+.wrapper > input:focus{
+    outline:none
 }
 
 .material-icons:hover, .material-icons-outlined:hover{
