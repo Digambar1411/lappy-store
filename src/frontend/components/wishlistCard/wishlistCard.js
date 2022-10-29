@@ -40,10 +40,11 @@ export function WishlistCard(product) {
 			<div className="div-padding wishlist-card-btn-div">
 				<button
 					className="solid primary-solid"
-					onClick={() => addToCart(product)}
-				>
-					{" "}
-					Add to cart
+					onClick={() => {
+						addToCart(product)
+						removeFromWishList(product._id)}
+					}
+				>Add to cart
 				</button>
 
 				<div>

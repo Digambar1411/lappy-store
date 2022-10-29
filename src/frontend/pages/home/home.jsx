@@ -1,9 +1,9 @@
-import React from "react";
+import React, { useState, useEffect} from "react";
+import axios from "axios";
 import "./home.css";
 import { Navbar } from  "../../components/navbar/Navbar";
 import { Footer } from "../../components/footer/Footer";
 import { useNavigate} from "react-router-dom";
-import { useCategory } from "../../contexts/category-context";
 import { useFilter} from "../../contexts/filter-context";
 export const laptopImage = require('../../assets/laptop.png');
 const dellLogo = require('../../assets/dell-144.png');
@@ -13,16 +13,20 @@ const asusLogo = require('../../assets/asus-144.png');
 
 
 export function Home() {
-  const { categories }= useCategory();
   const { dispatch } = useFilter();
   const navigate = useNavigate();
-  // const { pathname } = useLocation();
 
-  // useEffect(()=>{
-  //   if(pathname === "/"){
-  //     dispatch({type:"CLEAR"});
-  //   }
-  // });
+  const [categories, setCategories] = useState([]);
+
+    const getCategory = async()=>{
+        const res = await axios.get("/api/categories");
+        setCategories(res.data.categories);
+        
+      }
+    
+      useEffect(()=>{
+        getCategory()
+      },[])
   
   return (
       <div>

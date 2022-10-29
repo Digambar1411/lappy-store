@@ -7,7 +7,7 @@ import { useAuth } from "../../contexts/auth-context";
 import axios from "axios";
 
 export function Cart() {
-	const { cart } = useCart();
+	const { cart,setCart } = useCart();
 	const {
 		authState: { token },
 	} = useAuth();
@@ -23,13 +23,13 @@ export function Cart() {
 	const FinalAmount = TotalPrice + deliveryCharge - TotalDiscount;
 
 	const getproductsFromCart = async () => {
-		console.log(token);
 		try {
 			const response = await axios.get("/api/user/cart", {
 				headers: {
 					authorization: token,
 				},
 			});
+			setCart(response.data.cart)
 		} catch (error) {
 			console.error(error);
 		}
@@ -37,7 +37,7 @@ export function Cart() {
 
 	useEffect(() => {
 		getproductsFromCart();
-	}, [cart]);
+	}, []);
 
 	return (
 		<>

@@ -7,7 +7,7 @@ import { useAuth } from "../../contexts/auth-context";
 import axios from "axios";
 
 export function Wishlist(){
-    const { wishlist } = useWishlist();
+    const { wishlist, setWishlist} = useWishlist();
     const { authState:{token}}= useAuth();
 
     const getProductsFromWishlist = async () => {
@@ -17,6 +17,7 @@ export function Wishlist(){
                     authorization: token,
                 },
             });
+            setWishlist(response.data.wishlist)
 		} catch (error) {
 			console.error(error);
 		}
