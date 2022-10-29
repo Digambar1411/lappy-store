@@ -1,148 +1,155 @@
-*{
-    font-family: 'Ubuntu', sans-serif;
+* {
+	font-family: "Ubuntu", sans-serif;
 }
 
-:root{
-    --color-body:#f5f8fc;
-    --color-card:white;
-    --color-lightblue:#a7d4f7;
-    --color-grey:#d2d7dd;
-    --color-blue:#5959ec;
-    --color-btn-hover:#383CC1;
+:root {
+	--color-body: #f5f8fc;
+	--color-card: white;
+	--color-lightblue: #a7d4f7;
+	--color-grey: #d2d7dd;
+	--color-blue: #5959ec;
+	--color-btn-hover: #383cc1;
 }
 
-body{
-    background-color: var(--color-body);
-    line-height: 1.5;
-    font-weight: 500;
-    font-size: large;
+body {
+	background-color: var(--color-body);
+	line-height: 1.5;
+	font-weight: 500;
+	font-size: large;
 }
 
-.login-card{
-    margin:5rem auto;
-    min-width:290px;
-    width:330px;
-    background-color: var(--color-card);
-    padding:2rem;
-    border-radius: 4px;
-    height: fit-content; 
-    box-shadow: 0 4px 4px 0 rgb(0 0 0 / 20%);
+.login-card {
+	margin: 5rem auto;
+	min-width: 290px;
+	width: 330px;
+	background-color: var(--color-card);
+	padding: 2rem;
+	border-radius: 4px;
+	height: fit-content;
+	box-shadow: 0 4px 4px 0 rgb(0 0 0 / 20%);
 }
 
-.flex-col-login{
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+.flex-col-login {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
 }
 
-.flex-row-login{
-    display: flex;
-    gap: 1rem;
-    align-items: center; 
-   
+.flex-row-login {
+	display: flex;
+	gap: 1rem;
+	align-items: center;
 }
-.flex-center-login{
-    flex-direction: row;
-    gap: 2px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.flex-center-login {
+	flex-direction: row;
+	gap: 2px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
-.flex-left{
-    display: flex;
-    justify-content: flex-start;
-}
-
-
-.text-center{
-    text-align: center;
+.flex-left {
+	display: flex;
+	justify-content: flex-start;
 }
 
-.padding-top-12px{
-    padding-top:0.75rem;
+.text-center {
+	text-align: center;
 }
 
-.input{
-    border-radius: 4px;
-    height: 1.25rem;  
-    border: 3px solid var(--color-grey);
-    padding:5px;
+.padding-top-12px {
+	padding-top: 0.75rem;
 }
 
-.w-100{
-    width: 100%;
+.input {
+	border-radius: 4px;
+	height: 1.25rem;
+	border: 1px solid var(--color-grey);
+	padding: 8px;
 }
 
-.login-btn{
-    color: #FFF;
-    margin-top: 8px;
-    padding: 0.5rem 1rem;
-    border-radius:5px;
-    text-decoration: none;
-    font-size: larger;
-    cursor: pointer;
+.w-100 {
+	width: 100%;
 }
 
-.solid-login{
-    background-color:var(--color-primary);
-    border: none;
+.login-btn {
+	color: #fff;
+	margin-top: 8px;
+	padding: 0.5rem 1rem;
+	border-radius: 5px;
+	text-decoration: none;
+	font-size: larger;
+	cursor: pointer;
 }
 
-.outline-login{
-    border:1px solid var(--color-primary);
-    color: black;
+.solid-login {
+	background-color: var(--color-primary);
+	border: none;
 }
 
-.outline-login:hover{
-    color: #FFF;
+.outline-login {
+	border: 1px solid var(--color-primary);
+	color: black;
 }
 
-.login-btn:hover{
-    background-color: var(--color-btn-hover);
+.outline-login:hover {
+	color: #fff;
 }
 
-.input:hover{
-    border: 3px solid var(--color-lightblue);
-}
-.input-checkbox{
-    height: 1rem;
-    width: 1rem;
-    margin-right: 10px;
+.login-btn:hover {
+	background-color: var(--color-btn-hover);
 }
 
-.link-forgot-pass{
-    text-decoration: none;
-    color:var(--color-primary);
-    font-size:small
+.input:hover {
+	border: 1px solid var(--color-lightblue);
+}
+.input-checkbox {
+	height: 1rem;
+	width: 1rem;
+	margin-right: 10px;
 }
 
-.link-black{
-    text-decoration: none;
-    color: black;
+.link-forgot-pass {
+	text-decoration: none;
+	color: var(--color-primary);
+	font-size: small;
 }
 
-.link-white{
-    text-decoration: none;
-    color:#FFF;
+.link-black {
+	text-decoration: none;
+	color: black;
 }
 
-.margin-top-1rem{
-    margin-top: 1rem;
+.link-white {
+	text-decoration: none;
+	color: #fff;
 }
 
-.margin-top-8px{
-    margin-top: 8px;
+.margin-top-1rem {
+	margin-top: 1rem;
 }
 
-.bold{
-    font-weight: bold;
-}
-.margin-below-1rem{
-    margin-bottom: 1rem;
+.margin-top-8px {
+	margin-top: 8px;
 }
 
-.justify-content-space-btwn{
-    display: flex;
-    justify-content: space-between;
-    
+.bold {
+	font-weight: bold;
+}
+.margin-below-1rem {
+	margin-bottom: 1rem;
+}
+
+.justify-content-space-btwn {
+	display: flex;
+	justify-content: space-between;
+}
+
+.flex-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.fs-24 {
+	font-size: 1.5rem;
 }

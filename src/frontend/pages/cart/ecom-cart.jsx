@@ -7,7 +7,7 @@ import { useAuth } from "../../contexts/auth-context";
 import axios from "axios";
 
 export function Cart() {
-	const { cart,setCart } = useCart();
+	const { cart, setCart } = useCart();
 	const {
 		authState: { token },
 	} = useAuth();
@@ -29,7 +29,7 @@ export function Cart() {
 					authorization: token,
 				},
 			});
-			setCart(response.data.cart)
+			setCart(response.data.cart);
 		} catch (error) {
 			console.error(error);
 		}
@@ -48,7 +48,10 @@ export function Cart() {
 			)}
 			<div className="my-cart flex">
 				<div className="cart-product-section">
-					{cart && cart.map((product) => <HorizontalCard {...product} />)}
+					{cart &&
+						cart.map((product) => (
+							<HorizontalCard {...product} key={product.id} />
+						))}
 				</div>
 
 				{cart.length > 0 && (

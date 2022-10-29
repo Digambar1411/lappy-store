@@ -53,7 +53,7 @@ export function Login() {
 							Email address
 						</label>
 						<input
-							className="input padding-top-12px"
+							className="input"
 							type="email"
 							placeholder="abc@gmail.com"
 							required
@@ -67,7 +67,7 @@ export function Login() {
 							Password
 						</label>
 						<input
-							className="input padding-top-12px"
+							className="input"
 							placeholder="enter your password"
 							id="password"
 							type="password"
@@ -108,12 +108,10 @@ export function Login() {
 					</div>
 				</form>
 
-				<div className="text-center center margin-top-1rem">
-					<Link className="link-black text-center center" to="/signup">
+				<div className="text-center margin-top-1rem">
+					<Link className="link-black text-center flex-center" to="/signup">
 						Create New Account
-						<span className="material-icons-outlined bold center">
-							arrow_forward
-						</span>
+						<span className="material-icons-outlined fs-24">arrow_forward</span>
 					</Link>
 				</div>
 			</div>

@@ -50,7 +50,7 @@ export function WishlistCard(product) {
 				<div>
 					<button className="floating-btn delete">
 						<span
-							class="material-icons"
+							className="material-icons"
 							onClick={() => removeFromWishList(product._id)}
 						>
 							delete

@@ -8,7 +8,7 @@ export function ProductCard(product) {
 	const navigate = useNavigate();
 
 	return (
-		<div key={product.id} className="card">
+		<div  className="card">
 			<div className="body">
 				<div className="img-div">
 					<img className="card-Image" src={product.image} alt="laptop" />
