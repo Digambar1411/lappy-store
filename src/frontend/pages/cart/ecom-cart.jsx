@@ -17,7 +17,7 @@ export function Cart() {
 		0
 	);
 	const TotalDiscount = cart.reduce(
-		(acc, cur) => acc + cur.originalPrice * (Number(cur.offer) / 100),
+		(acc, cur) => acc + cur.originalPrice * (Number(cur.offer) / 100) * cur.quantity,
 		0
 	);
 	const FinalAmount = TotalPrice + deliveryCharge - TotalDiscount;
