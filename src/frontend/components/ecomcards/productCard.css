@@ -1,7 +1,13 @@
 .rating-span{
-    padding-right: 1rem;
-    display: flex;
-    justify-content: center;
-    align-items:center;
-    text-align: center;
+    padding-left: 1rem;
+    font-size: 14px;
+}
+
+.card{
+    padding: 10px !important;
+    box-sizing: border-box;
+}
+
+.ecom-btn{
+    width: 100% !important;
 }
