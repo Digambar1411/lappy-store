@@ -16,12 +16,12 @@ export function ProductCard(product) {
 
 				<div className="body-content div-padding">
 					<h3 className="card-title">{product.brand}</h3>
-					<h4 className="card-sub-title">{product.name}</h4>
+					<div>
+						<span className="card-sub-title">{product.name}</span>
+						<span className="rating-span">{"⭐".repeat(`${product.rating}`)}</span>
+					</div>
 				</div>
 
-				<div className="body-content div-padding">
-					<p className="content">{product.details}</p>
-				</div>
 			</div>
 
 			<div className="flex-row div-padding">
@@ -33,9 +33,12 @@ export function ProductCard(product) {
 						</span>
 						<span className="text-lightblue">({product.offer}% off)</span>
 					</div>
-					<span className="rating-span">{product.rating}⭐</span>
 				</div>
+				
 			</div>
+
+			
+			
 			{cart.find((item) => item._id === product._id) ? (
 				<div className="card-footer flex center div-padding">
 					<div className="btn-with-icon">
@@ -49,14 +52,14 @@ export function ProductCard(product) {
 				</div>
 			) : (
 				<div className="card-footer flex center div-padding">
-					<div className="btn-with-icon">
+					{/* <div className="btn-with-icon"> */}
 						<button
-							className="solid primary-solid"
+							className="solid primary-solid ecom-btn"
 							onClick={() => addToCart(product)}
 						>
 							Add to cart
 						</button>
-					</div>
+					{/* </div> */}
 				</div>
 			)}
 		</div>

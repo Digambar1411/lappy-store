@@ -89,9 +89,9 @@ export function Home() {
 					</div>
 				</div>
 
-				<div>
+				<div className="flex-col">
 					<p className="deal-heading center flex">Featured Brands</p>
-					<div className="deal-container flex center">
+					<div className="logo-container">
 						<div className="laptop-brand">
 							<img className="brandLogo" src={dellLogo} alt="dellLogo" />
 						</div>
