@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState ,useCallback} from "react";
 import { useNavigate } from "react-router";
 import { useCart } from "../../contexts/cart-context";
 import { useWishlist } from "../../contexts/wishlist-context";
@@ -15,9 +15,9 @@ export function Navbar() {
 	const navigate = useNavigate();
 	const [mobileMenus, setMobileMenus] = useState(false);
 
-	const toggleMobileMenus = () => {
+	const toggleMobileMenus = useCallback(() => {
 		setMobileMenus(() => !mobileMenus);
-	};
+	},[mobileMenus]);
 
 	return (
 		<>
@@ -101,7 +101,7 @@ export function Navbar() {
 				</div>
 
 			</nav>
-			
+
 			<div className= {`${ mobileMenus ? "mobile-menus-hidden" : "mobile-menus-active" }`}>
 				{isLoggedIn ? (
 					<>
